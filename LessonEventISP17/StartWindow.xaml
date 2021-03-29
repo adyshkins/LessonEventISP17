@@ -1,0 +1,62 @@
+﻿<Window x:Class="LessonEventISP17.StartWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LessonEventISP17"
+        mc:Ignorable="d"
+        Title="StartWindow" 
+        Height="450" 
+        Width="800"
+        WindowStartupLocation="CenterScreen">
+    <Grid>
+
+        <StackPanel>
+            <TextBlock Text="Фамилия"
+                       FontSize="20"
+                       Margin="0 50 0 0"
+                       HorizontalAlignment="Center"/>
+            <TextBox x:Name="txtLastName"
+                     FontSize="20"
+                     Width="200"
+                     Height="30"
+                     Margin="0 20 0 0"/>
+
+            <TextBlock Text="Имя"
+                       FontSize="20"
+                       Margin="0 20 0 0"
+                       HorizontalAlignment="Center"/>
+            <TextBox x:Name="txtFirstName"
+                     FontSize="20"
+                     Width="200"
+                     Height="30"
+                     Margin="0 20 0 0"/>
+
+            <TextBlock Text="Возраст"
+                       FontSize="20"
+                       Margin="0 20 0 0"
+                       HorizontalAlignment="Center"/>
+            <TextBox x:Name="txtAge"
+                     FontSize="20"
+                     Width="200"
+                     Height="30"
+                     Margin="0 20 0 0"
+                     PreviewTextInput="txtAge_PreviewTextInput"/>
+            
+            <Button x:Name="btnEnter"
+                Content="Enter"
+                FontSize="25"
+                FontWeight="Bold"
+                FontFamily="Candara"                
+                Width="150"
+                Height="40"
+                Margin="0 20"
+                Click="btnEnter_Click"/>
+        </StackPanel>
+     
+
+
+
+
+    </Grid>
+</Window>
